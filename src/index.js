@@ -1,17 +1,34 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import ReactDom from 'react-dom'; 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+
+function BookList() {
+   return (
+   <section>
+     <Book />
+     <Book />
+     <Book />
+     <Book />
+     <Book />
+   </section>
+  );
+}
+
+const Book = () =>{
+  return <article>
+    <Image></Image>
+    <Title/>
+    <Author />
+    </article>;
+};
+const Image = () => (
+<img 
+  src="https://images-na.ssl-images-amazon.com/images/I/51rwXABgAYL._SX258_BO1,204,203,200_.jpg"
+   alt="ss"/>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const Title = () => <h1>Trick or Treast, Baby Shark!: Doo Doo Doo Doo Doo Doo (A Baby Shark Book)</h1>
+const Author = () => <h4>Amelia Hepworth</h4>; 
+
+ReactDom.render(<BookList />, document.getElementById('root'));
