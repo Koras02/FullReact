@@ -12,7 +12,7 @@ const firstBook = {
 const secondBook = {
   img:'https://images-na.ssl-images-amazon.com/images/I/41rbthdtokL._SX390_BO1,204,203,200_.jpg',
   title:'Greenlights Hardcover – October 20, 2020',
-  author: 'Matthew McConaughey'
+  author: 'Matthew McConaughsey'
 }
 
 function BookList() {
