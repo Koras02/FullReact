@@ -1,12 +1,9 @@
 import React from 'react';
-import UseStateObject from './tutorial/1-useState/setup/4-useState-object';
-import Setup from './tutorial/1-useState/setup/4-useState-object';
-import Final from './tutorial/1-useState/final/3-useState-array';
-
+import Setup from './tutorial/2-useEffect/final/3-useEffect-fetch-data';
 function App() {
-  return (
+  return(  
   <div className='container'>
-      <Final />
+      <Setup />
    </div>
   );
 }
